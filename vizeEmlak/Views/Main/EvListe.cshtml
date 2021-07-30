@@ -1,0 +1,35 @@
+﻿@model  List<vizeEmlak.Models.House>
+
+
+<div class="container row col-md-12" style="margin-left: 20px; border-bottom: 4px solid #1e052b;">
+    <div class="col-md-6">
+        <br />
+        <h5><b>Öne Çıkan İlanlar</b></h5>
+    </div>
+    <div class="col-md-6">
+        <button id="oneCikan" class="btn">Tüm Öne Çıkan İlanlar</button>
+    </div>
+</div>
+<br />
+<div class="row">
+    <div class="container">
+        @{string dosyaturu = "*.jpg,*.gif,*.png,*.bmp,*.jpe,*.jpeg,*.ico";
+            foreach (string yol in Directory.GetFiles(Server.MapPath("~/Pictures/"), "*.*").Where(x => dosyaturu.Contains(Path.GetExtension(x).ToLower())))
+            {
+                var resim = new FileInfo(yol);
+                <img style="width: 250px; height: 250px; margin-left:175px; margin-top:25px;" src="@Url.Content(String.Format("~/Pictures/{0}", resim.Name))" />
+                var resim2 = @Url.Content(String.Format("~/ Pictures /{0}", resim.Name));
+            }
+        }
+    </div>
+
+    <div class="container">
+
+        @{
+            foreach (var house in Model)
+            {
+                @Html.Partial("~/Views/Main/Partial/_ev.cshtml", house)
+            }
+        }
+    </div>
+</div>

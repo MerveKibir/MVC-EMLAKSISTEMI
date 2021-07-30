@@ -1,0 +1,16 @@
+﻿@model List<vizeEmlak.Models.EmlakBilgi>
+@{
+    ViewBag.Title = "EmlakDetayBilgi";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Emlak Detay Bilgi</h2>
+<div>
+
+    @{
+        foreach (var detay in Model)
+        {
+            @Html.Partial("~/Views/Main/Partial/_emlakDetayBilgi.cshtml", detay)
+        }
+    }
+</div>

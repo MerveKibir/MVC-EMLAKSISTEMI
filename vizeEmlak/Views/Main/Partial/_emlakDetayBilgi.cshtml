@@ -1,0 +1,79 @@
+﻿@model  vizeEmlak.Models.EmlakBilgi
+<div class="row container " style="margin-top:50px;">
+    <div class="col " style="float:left; ">
+        <img src="~/Pictures/İller/1.jpg"  style="width: 600px; height: 600px; margin-left:300px;" />
+    </div>
+    <div class="col " style="float: right; margin-right: 100px;">
+        <div>
+            <img src="~/Pictures/ev-fiyatlari.jpg" style="width: 200px; height: 200px;" /><br />
+            <img src="~/Pictures/EV1.jpg" style="width: 200px; height: 200px;" /><br />
+            <img src="~/Pictures/EV3.jpg" style="width: 200px; height: 200px;" />
+        </div>
+    </div>
+</div>
+<div class="row container " style="font-size: large;
+        font-weight: 500;
+        margin-left: 120px;
+        margin-top: 10px;
+        padding:5px;
+        text-align:center;
+">
+    <div class="row container acklm2 col-12">
+        <div class="col-3" style="        float: left;
+        border: 2px solid #1f0541;">
+            <p>Metrekare:</p>@Model.MetreKare
+        </div>
+        <div class="col-3" style="        float: left;
+        border: 2px solid #1f0541;
+">
+            <p>Oda Sayısı: </p>@Model.OdaSayisi
+        </div>
+        <div class="col-3" style="        float: left;
+        border: 2px solid #1f0541;
+">
+            <p>İlan Tarihi: </p>@Model.IlanTar
+        </div>
+        <div class="col-3" style="        float: left;
+        border: 2px solid #1f0541;
+">
+            <p>İlan Numarası: </p>@Model.IlanNo
+        </div>
+    </div>
+</div>
+
+<div  class="acklm2 row container col-12" style="margin-left:50px;">
+    <h3 style="color:#1f0541;"><u> Özellikler</u></h3>
+    <div class="col-2" style="float:left; ">
+
+        <p>İlan No:       </p>
+        <p>Metrekare:     </p>
+        <p>Banyo Sayısı:  </p>
+        <p>Mobilya Durumu:</p>
+    </div>
+    <div class="col-2" style="float:left; line-height:37px; ">
+
+        @Model.IlanNo <br />
+        @Model.MetreKare<br />
+        @Model.BanyoSayisi<br />
+        @Model.MobilyaDurumu<br />
+    </div>
+    <div class="col-2" style="float:left; ">
+        <p>Oda Sayısı:</p>
+        <p>Bina Yaşı: </p>
+        <p>Kimden:    </p>
+    </div>
+    <div class="col-2" style="float:left; line-height:37px; ">
+
+        @Model.OdaSayisi <br />
+        @Model.BinaYasi <br />
+        @Model.Kimden <br />
+    </div>
+</div>
+
+<div class="row container" style="margin-left:50px;border-bottom: 4px solid #1f0541;">
+    <h3 style="color: #1f0541;
+"><u> Açıklama</u></h3>
+    @Model.Aciklama
+</div>
+
+

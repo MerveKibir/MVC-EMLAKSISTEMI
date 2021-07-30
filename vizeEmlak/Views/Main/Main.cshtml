@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Main";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@Html.Partial("~/Views/Main/Partial/_arama.cshtml")
+
+<div class="row">
+    @{
+        Html.RenderAction("EvListe");
+    }
+</div>
+<div class="row">
+    @{
+        Html.RenderAction("IlanListele");
+    }
+</div>
+
+

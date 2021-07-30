@@ -1,0 +1,152 @@
+﻿
+body {
+    background-color: ghostwhite;
+}
+
+.header {
+    width: 100%;
+    height: 75px;
+    padding: 5px;
+    background-color: darkslategray;
+    border-width: 2px;
+    border-style: groove;
+    border-color: #121e1e;
+}
+
+h4 {
+    font-size: 27px;
+    color: ghostwhite;
+}
+
+.nav {
+    padding: 5px;
+}
+
+    .nav ul {
+        list-style-type: none;
+        overflow: hidden;
+    }
+
+        .nav ul li {
+            float: left;
+            margin: 9px 20px;
+            font-size: 27px;
+        }
+
+            .nav ul li a {
+                text-decoration: none;
+                color: ghostwhite;
+                margin-top: 10px;
+            }
+
+.button .button1 {
+    background-color: ghostwhite;
+    width: 100px;
+    height:66px;
+    margin: 15px;
+    font-weight:700;
+    color:#121e1e;
+}
+.button .button2 {
+    background-color: #121e1e;
+    width: 100px;
+    height: 66px;
+    margin: 15px;
+    font-weight: 700;
+    color: ghostwhite;
+}
+
+.footer {
+    background-color: darkslategray;
+    width: 100%;
+    height: 300px;
+    float: left;
+    color: white;
+    margin-top: 15px;
+}
+
+    .footer #col b {
+        font-size: 18px;
+    }
+
+
+.footer_container {
+    width: 100%;
+    height: 200px;
+    margin: 40px auto;
+}
+
+#col {
+    width: 190px;
+    height: 200px;
+    float: left;
+    margin-left: 40px;
+}
+
+    #col button {
+        width: 150px;
+        height: 40px;
+        font-weight: 400;
+        background-color: ghostwhite;
+    }
+
+    #col ul {
+        list-style-type: none;
+        margin: 20px 0px;
+        padding: 0px;
+    }
+
+
+
+        #col ul li {
+            float: left;
+            font-size: 15px;
+            margin-bottom: 10px;
+            clear: left;
+            color: #949798;
+        }
+
+
+
+.search {
+    width: 100%;
+    height: 300px;
+    background-color: #627e7e;
+    border: 2px groove #121e1e;
+}
+
+    .search input {
+        width: 400px;
+        height: 45px;
+        margin-left: 420px;
+        margin-top: 125px;
+    }
+
+    .search button {
+        width: 250px;
+        height: 50px;
+        font-size: larger;
+        font-weight: 600;
+        background-color: ghostwhite;
+        color: darkslategray;
+        margin-top:122px;
+        margin-left:18px;
+    }
+
+#oneCikan {
+    margin: 15px;
+    background-color: darkslategrey;
+    color: ghostwhite;
+    float: right;
+}
+
+.acklm2 p {
+    color: #1f0541;
+    font-weight:700;
+}
+.field-validation-error{
+    color:darkred;
+    font-weight:500;
+}
+
+

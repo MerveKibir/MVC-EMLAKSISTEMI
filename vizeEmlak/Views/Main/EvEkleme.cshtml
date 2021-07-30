@@ -1,0 +1,44 @@
+﻿@model vizeEmlak.Models.EmlakBilgi
+@{
+    ViewBag.Title = "EvEkleme";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container" style="border-bottom:4px solid #16091f;">
+    <br />
+    <h2>Ev Ekleme Ekranı</h2>
+    <br />
+</div>
+<br />
+<div class="container">
+    <form action="EvEkleme" method="post">
+        <input type="number" class="form-control" name="IlanNo" placeholder="İlan No" />
+        @Html.ValidationMessageFor(p => p.IlanNo) <BR />
+        <input type="text" class="form-control" name="IlanTar" placeholder="Ilan Tarihi" />
+        @Html.ValidationMessageFor(p => p.IlanTar)<BR />
+        <input type="text" class="form-control" name="Kimden" placeholder="Kimden" />
+        @Html.ValidationMessageFor(p => p.Kimden)<BR />
+        <input type="text" class="form-control" name="OdaSayisi" placeholder="Oda Sayisi" />
+        @Html.ValidationMessageFor(p => p.OdaSayisi)<BR />
+        <input type="number" class="form-control" name="BanyoSayisi" placeholder="Banyo Sayisi" />
+        @Html.ValidationMessageFor(p => p.BanyoSayisi)<BR />
+        <input type="number" class="form-control" name="Metrekare" placeholder="Metrekare" />
+        @Html.ValidationMessageFor(p => p.MetreKare)<BR />
+        <input type="text" class="form-control" name="BinaYasi" placeholder="Bina Yasi" />
+        @Html.ValidationMessageFor(p => p.BinaYasi)<BR />
+        <input type="text" class="form-control" name="MobilyaDurumu" placeholder="Mobilya Durumu" />
+        @Html.ValidationMessageFor(p => p.MobilyaDurumu)<BR />
+        <input type="text" class="form-control" name="Aciklama" placeholder="Aciklama" />
+        @Html.ValidationMessageFor(p => p.Aciklama)<BR />
+
+                                                   <br />
+
+        <div class="d-grid gap-2">
+            <button class="btn btn-primary" style="background-color:darkslategrey;" type="submit">KAYDET</button>
+        </div>
+    </form><br />
+    <form action="/" method="get">
+        <div class="d-grid gap-2">
+            <button class="btn btn-primary" style="background-color:darkseagreen;" type="submit">ANASAYFA</button>
+        </div>
+    </form>
+</div>
